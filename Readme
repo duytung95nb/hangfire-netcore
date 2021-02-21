@@ -1,0 +1,17 @@
+Installation:
+Sql server for linux:
+https://manjaro.site/how-to-install-microsoft-sql-server-2019-on-linux-mint-20/
+
+Ref 2: https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver15
+Administrator password: P@ssword
+Connect to sql server:
+sqlcmd -S localhost -U SA -P 'P@ssword'
+List all db: SELECT Name from sys.Databases
+
+Install mssql extension to manage sql server from vscode.
+https://docs.microsoft.com/en-us/sql/tools/visual-studio-code/sql-server-develop-use-vscode?view=sql-server-ver15
+
+Get server name:
+SELECT @@SERVERNAME
+Get running instance name (service name)
+SELECT @@servicename
